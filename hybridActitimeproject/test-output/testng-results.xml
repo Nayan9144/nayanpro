@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-02T08:56:30 IST" name="Default suite" finished-at="2023-08-02T08:56:36 IST" duration-ms="6841">
+    <groups>
+    </groups>
+    <test started-at="2023-08-02T08:56:30 IST" name="Default test" finished-at="2023-08-02T08:56:36 IST" duration-ms="6841">
+      <class name="testpackage.Createmanager$UserTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testpackage.Createmanager$UserTestCase@3ba987b8]" started-at="2023-08-02T08:56:30 IST" name="setUp" finished-at="2023-08-02T08:56:35 IST" duration-ms="4955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createUserMethod()[pri:0, instance:testpackage.Createmanager$UserTestCase@3ba987b8]" started-at="2023-08-02T08:56:35 IST" name="createUserMethod" finished-at="2023-08-02T08:56:36 IST" duration-ms="943" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.IllegalAccessException: Can not set static final org.openqa.selenium.WebElement field genaricpackage.worklib.WebElement to jdk.proxy2.$Proxy16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.IllegalAccessException: Can not set static final org.openqa.selenium.WebElement field genaricpackage.worklib.WebElement to jdk.proxy2.$Proxy16
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+at pagepackage.Userpage.<init>(Userpage.java:35)
+at testpackage.Createmanager$UserTestCase.createUserMethod(Createmanager.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.IllegalAccessException: Can not set static final org.openqa.selenium.WebElement field genaricpackage.worklib.WebElement to jdk.proxy2.$Proxy16
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwFinalFieldIllegalAccessException(UnsafeFieldAccessorImpl.java:76)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwFinalFieldIllegalAccessException(UnsafeFieldAccessorImpl.java:80)
+at java.base/jdk.internal.reflect.UnsafeQualifiedStaticObjectFieldAccessorImpl.set(UnsafeQualifiedStaticObjectFieldAccessorImpl.java:77)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:115)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserMethod -->
+        <test-method is-config="true" signature="terDown()[pri:0, instance:testpackage.Createmanager$UserTestCase@3ba987b8]" started-at="2023-08-02T08:56:36 IST" name="terDown" finished-at="2023-08-02T08:56:36 IST" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terDown -->
+      </class> <!-- testpackage.Createmanager$UserTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
