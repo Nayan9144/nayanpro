@@ -21,7 +21,7 @@ public class Homepage {
 
 	public Homepage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(logoutLink, this);
+		PageFactory.initElements(driver, this);
 	}
 
     // utilization

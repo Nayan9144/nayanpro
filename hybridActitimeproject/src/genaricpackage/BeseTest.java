@@ -58,7 +58,7 @@ public class BeseTest extends Flib implements Iautoconstunt {
 		try {
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File sorce = ts.getScreenshotAs(OutputType.FILE);
-			File stor = new File("./screenshort/faildeTest.png");
+			File stor = new File("./screenshort/"+faildemethod+".png\"");
 			Files.copy(sorce, stor);
 
 		} catch (Exception e) {

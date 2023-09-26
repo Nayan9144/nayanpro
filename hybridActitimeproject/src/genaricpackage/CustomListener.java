@@ -5,7 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-public class CustomListener implements ITestListener {
+public class CustomListener extends BeseTest implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -24,7 +24,7 @@ public class CustomListener implements ITestListener {
 
 		String failedMethod = result.getMethod().getMethodName();
 		Reporter.log("Test falied due to :"+failedMethod,true);
-		faliedMethodToTakeScreenshot(failedMethod);
+		failedmethod(failedMethod);
 	}
 
 	private void faliedMethodToTakeScreenshot(String failedMethod) {
